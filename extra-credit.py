@@ -22,6 +22,12 @@ def resgame():
                     wrong_answers += 1
                 elif c.upper == TRUE:
                     right_answers += 1
+                    d = raw_input('Paul Resnick has counted to infinity... twice. True or false?')
+                    print d
+                    if d.upper == FALSE:
+                        wrong_answers += 1
+                    if d.upper == TRUE:
+                        right_answers += 1
     if wrong_answers >= 3:
         print 'You lose!'
     if wrong_answers < 3:
