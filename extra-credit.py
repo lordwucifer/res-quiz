@@ -8,22 +8,19 @@ def resgame():
     right_answers = 0
     while wrong_answers < 3:
         a = raw_input('Paul Resnick met Obama. True or false?')
-        print a
         if a.upper() == FALSE:
             wrong_answers += 1
-        if a.upper() == TRUE:
+        elif a.upper() == TRUE:
             right_answers += 1
             b = raw_input('Paul Resnick taught at U-M for 8 years. True or false?')
-            print b
             if b.upper() == TRUE:
                 wrong_answers += 1
-            if b.upper() == FALSE:
+            elif b.upper() == FALSE:
                 right_answers += 1
                 c = raw_input('Paul Resnick has a treadmill in his office. True or false?')
-                print c
                 if c.upper == FALSE:
                     wrong_answers += 1
-                if c.upper == TRUE:
+                elif c.upper == TRUE:
                     right_answers += 1
     if wrong_answers >= 3:
         print 'You lose!'
