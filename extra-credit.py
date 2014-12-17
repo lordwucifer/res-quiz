@@ -2,7 +2,8 @@
 #The code is purposefully buggy. Refer to PS6 with the hangman game to fix this one!
 #Ideas for changes: what happens when the user enters something other than true or false, more trivia, different wording, tests
 
-print 'This is a trivia game about Paul Resnick! If you get 3 answers wrong, you are a big loser.'
+print 'This is a trivia game about Paul Resnick! If you get 3 answers wrong, you are a big loser. The questions will be True/False.'
+
 def resgame():
     wrong_answers = 0
     right_answers = 0
