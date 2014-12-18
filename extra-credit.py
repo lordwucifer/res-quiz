@@ -150,3 +150,13 @@ while wrong_answers < 4:
 	if wrong_answers < 4:
 		print 'Congrats, you win! You guessed correctly ' + str(right_answers) + ' times!'
 		print 'You were incorrect ' + str(wrong_answers) + ' times, and correct ' + str(right_answers) + ' times.'
+	h = raw_input("Paul Resnick plays the fiddle. True or false?")
+	if g.upper == "FALSE":
+		wrong_answers += 1
+	elif g.upper == "TRUE":
+		right_answers +=1
+	if wrong_answers >= 4:
+		print 'You lose!'
+	if wrong_answers < 4:
+		print 'Congrats, you win! You guessed correctly ' + str(right_answers) + ' times!'
+		print 'You were incorrect ' + str(wrong_answers) + ' times, and correct ' + str(right_answers) + ' times.'
